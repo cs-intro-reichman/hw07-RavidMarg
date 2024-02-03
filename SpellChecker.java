@@ -49,6 +49,7 @@ public class SpellChecker {
 	}
 
 	public static String spellChecker(String word, int threshold, String[] dictionary) {
+		word = word.toLowerCase();
 		int min_distance = threshold + 1;
 		String result = word;
 
